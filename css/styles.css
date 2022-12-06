@@ -1,21 +1,44 @@
 :root {
     --primary: #F7A4A4;
-    --secondary: #FEBE8C;
+    --secondary: #11999E;
     --fg: #FFFBC1;
     --bg: #B6E2A1;
+    --fontColor: #66BFBF;
+    --top-bg: #eaf6f6;
+    --footer-bg: #66bfbf;
 }
 
 body {
     font-family: Nunito;
     text-align: center;
+    color: #40514e;
 }
 
 h1 {
-    text-align: center;
+    padding-top: 10px;
+    margin: 50px auto 0px auto;
+    font-size: 5.625rem;
+    color: var(--fontColor);
+    line-height: 2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--fontColor);
+    font-weight: normal;
+}
+
+h3 {
+    color: var(--secondary);
+}
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
 }
 
 p {
-    text-align: center;
+    line-height: 2;
 }
 
 img.profile-img {
@@ -23,9 +46,25 @@ img.profile-img {
     width: 150px;
 }
 
+
 img.small-img {
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
+}
+
+img.xs-img {
+    width: 15%;
+    height: 15%;
+}
+
+img.headline-img-left {
+    float: left;
+    margin-right: 10px
+}
+
+img.headline-img-right {
+    float: right;
+    margin-left: 10px
 }
 
 div {
@@ -35,11 +74,12 @@ div {
 .top-container {
     position: relative;
     text-align: center;
+    background-color: var(--top-bg);
 }
 
 .top-cloud {
     position: relative;
-    left: 160px;
+    left: 250px;
 }
 
 .bottom-cloud {
@@ -47,6 +87,65 @@ div {
     left: 150px
 }
 
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
 .middle-container {}
 
-.bottom-container {}
+.bottom-container {
+    padding: 20px;
+    background-color: var(--footer-bg);
+    color: var(--top-bg);
+}
+
+.description-left {
+    clear: left;
+}
+
+.description-right {
+    clear: right;
+}
+
+.skill-row-title-left {
+    padding-top: 40px;
+    text-align: left;
+}
+
+.skill-row-title-right {
+    padding-top: 40px;
+    text-align: right;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.contact-me {
+    padding-bottom: 30px;
+}
