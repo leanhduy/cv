@@ -1,0 +1,52 @@
+:root {
+    --primary: #F7A4A4;
+    --secondary: #FEBE8C;
+    --fg: #FFFBC1;
+    --bg: #B6E2A1;
+}
+
+body {
+    font-family: Nunito;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img.profile-img {
+    height: 150px;
+    width: 150px;
+}
+
+img.small-img {
+    width: 100px;
+    height: 100px;
+}
+
+div {
+    background-color: var(--fg);
+}
+
+.top-container {
+    position: relative;
+    text-align: center;
+}
+
+.top-cloud {
+    position: relative;
+    left: 160px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 150px
+}
+
+.middle-container {}
+
+.bottom-container {}
